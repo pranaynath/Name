@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Results</title>
+  <!-- links to CSS stylesheet in the public directory -->
+  <link rel="stylesheet" href="/css/index.css" >
+      <style>
+        @import url('https://fonts.googleapis.com/css?family=Quattrocento+Sans');
+
+body {
+    background: url("https://www.laserfiche.com/content/uploads/2016/01/shutterstock_284660570.jpg");
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    font-family: 'Quattrocento Sans', sans-serif;
+    height:100%;
+    margin:0;
+}
+
+.results-page {
+    font-size:5vmax;
+    padding-top:3vmax;
+    color: white;
+    text-align:center;
+}
+.text{
+    color: white;
+    font-size:5vmax;
+}
+
+.answer {
+   color: white;
+   font-size:5vmax;
+}
+.return {
+  color: white;
+}
+a {
+  text-decoration:none;
+  background-color:hotpink;
+  border-radius:20px;
+  
+}
+
+    </style>
+  
+</head>
+<body> 
+  <div class="results-page">
+    <div class="answer">
+      <%= @game1.game %>
+    </div>
+    <div class="return">
+      <a href="/">Play Again</a>
+      </div>
+  </div>
+
+</body>
+</html>
